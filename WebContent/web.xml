@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+ 
+  
+  <servlet>
+   <servlet-name>Accueil</servlet-name>
+    <servlet-class>com.oztest.servlet.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/accueil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>Identifier</servlet-name>
+    <servlet-class>com.oztest.servlet.Identifier</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Identifier</servlet-name>
+    <url-pattern>/identifier</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>Inscrire</servlet-name>
+    <servlet-class>com.oztest.servlet.Inscrire</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Inscrire</servlet-name>
+    <url-pattern>/inscrire</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>Accueil2</servlet-name>
+    <servlet-class>com.oztest.servlet.Accueil2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil2</servlet-name>
+    <url-pattern>/accueil2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>Catalogue</servlet-name>
+    <servlet-class>com.oztest.servlet.Catalogue</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Catalogue</servlet-name>
+    <url-pattern>/catalogue</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
