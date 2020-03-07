@@ -12,6 +12,7 @@ h1{color:black;}
 </style>
 </head>
 <body>
+<!-- TODO validation and change action to stay in inscrire --> 
 <h1> Inscrivez-vous </br></h1>
     <form method="POST" action="Accueil2">
         <p>
