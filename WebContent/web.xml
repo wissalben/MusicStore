@@ -29,14 +29,7 @@
     <url-pattern>/inscrire</url-pattern>
   </servlet-mapping>
   
-  <servlet>
-   <servlet-name>Accueil2</servlet-name>
-    <servlet-class>com.oztest.servlet.Accueil2</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Accueil2</servlet-name>
-    <url-pattern>/accueil2</url-pattern>
-  </servlet-mapping>
+  
   
   <servlet>
    <servlet-name>Catalogue</servlet-name>

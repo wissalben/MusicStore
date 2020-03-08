@@ -34,20 +34,5 @@ public class DBConnection {
 
 	}
 	
-	/**
-	 *  CLOSING CONNECTIONS
-	 * 		In every method that interacts with the DB (expl getUsersById, insertUser, deleteUser)
- 	 * 		try{
- 	 * 			Connection conn = DBConnexion.getDBConnection();
- 	 * 			// Do your work (insert, or delete, update ....)
- 	 * 		}
- 	 * 		catch(Exception ...)[
- 	 * 			...
- 	 * 		}
- 	 * 		finally{
- 	 * 			if(conn != null)
- 	 * 				conn.close();	
- 	 * 		}
-	 */
 	
 }

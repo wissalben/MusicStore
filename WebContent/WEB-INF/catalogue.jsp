@@ -10,6 +10,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+   border: 1px solid ;
 }
 
 td, th {
@@ -18,34 +19,69 @@ td, th {
   padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+
 body {background-color: powderblue;}
-h3{color:black;}
+h3{color:#8B008B;
+   font-size:50px;
+   text-align:center;
+   font-family:arial;
+ 
+}
 </style>
 </head>
 <body>
 
 <h3>Catalogue</h3>
 
-<table>
-  <tr>
-    <th>reference</th>
-    <th>Titre</th>
-    <th>Auteur</th>
-    <th>Photo</th>
-    <th>Prix</th>
-  </tr>
-  <tr>
-    <td><a href="">J1234</a></td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-     <td><img src="profil.jpg" alt="Trulli" width="250" height="111"></td>
-      <td>Germany</td>
-  </tr>
- 
+<table class="table">
+  <thead class="thead-dark">
+    <tr style="color:#ff33f9;
+   font-size:25px;
+   text-align:center;
+   font-family:italic;">
+      <th scope="col">Reference</th>
+      <th scope="col">Titre</th>
+      <th scope="col">Auteur</th>
+      <th scope="col">Photo </th>
+      <th scope="col">Prix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href="ztest/Chanteur1">J1234</a></th>
+      <td>Carmen</td>
+      <td>LanaDelRey</td>
+    <td>  <figure class="figure">
+  <img src="/home/profil.jpg" class="figure-img img-fluid rounded" alt="...">
+    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+  </figure></td>
+       <td>million</td>
+       
+    </tr>
+    <tr>
+       <th scope="row"><a href="ztest/Chanteur1">J5678</a></th>
+      <td>Carmen</td>
+      <td>LanaDelRey</td>
+    <td>  <figure class="figure">
+  <img src="/home/profil.jpg" class="figure-img img-fluid rounded" alt="...">
+    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+  </figure></td>
+       <td>million</td>
+    </tr>
+    <tr>
+       <th scope="row"><a href="ztest/chanteur1">J9123</a></th>
+      <td>Carmen</td>
+      <td>LanaDelRey</td>
+    <td>  <figure class="figure">
+  <img src="/home/profil.jpg" class="figure-img img-fluid rounded" alt="...">
+    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+  </figure></td>
+       <td>million</td>
+    </tr>
+  </tbody>
 </table>
+
+
 
 </body>
 </html>
