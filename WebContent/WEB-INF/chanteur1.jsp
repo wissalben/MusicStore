@@ -13,6 +13,11 @@ h3{color:#8B008B;
    font-family:arial;
  
 }
+*{
+margin : 20px;
+
+
+}
 </Style>
 </head>
 <body>
