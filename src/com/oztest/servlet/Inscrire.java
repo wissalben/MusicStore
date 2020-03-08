@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.oztest.javabeans.Client;
-import com.ztest.DBconnexion.AjouterSelectionnerClient;
+import com.ztest.DBconnexion.ClientDao;
 
 
 @WebServlet("/Inscrire")
@@ -39,15 +39,15 @@ public class Inscrire extends HttpServlet {
         client1.setEmail(request.getParameter("email"));
         client1.setPass(request.getParameter("pass"));
         
-    AjouterSelectionnerClient nouveauclient = new AjouterSelectionnerClient();
+    ClientDao nouveauclient = new ClientDao();
     try {
-		nouveauclient.sauvgarderEnBase(client1);
+		nouveauclient.sauvgarderClientEnBase(client1);
 	} catch (ClassNotFoundException | SQLException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
     try {
-		request.setAttribute("clients", nouveauclient.recupererDeBase(client1.getEmail(), client1.getPass()));
+		request.setAttribute("clients", nouveauclient.recupererClientDeBase(client1.getEmail(), client1.getPass()));
 	
 		
     

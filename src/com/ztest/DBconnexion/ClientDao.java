@@ -10,9 +10,9 @@ import java.util.List;
 
 import com.oztest.javabeans.Client;
 
-public class AjouterSelectionnerClient {
+public class ClientDao {
 	
-	public List<Client> recupererDeBase(String email,String pass) throws ClassNotFoundException, SQLException
+	public List<Client> recupererClientDeBase(String email,String pass) throws ClassNotFoundException, SQLException
 	{    List<Client> clients = new ArrayList<Client>();
 		Connection conn = null;
 		 Statement statement = null;
@@ -28,9 +28,9 @@ public class AjouterSelectionnerClient {
 		    resultat = statement.executeQuery(sql);
 
 		            
-		            while (resultat.next()) {
+		            if (resultat.next()) {
 
-		            	if(email.equals(resultat.getString("email")) && pass.equals(resultat.getString("pass")) ) {
+		            	
 		            		 String nom = resultat.getString("nom");
 		                     String prenom = resultat.getString("prenom");
 		                     
@@ -38,9 +38,7 @@ public class AjouterSelectionnerClient {
 		                     client.setNom(nom);
 		                     client.setPrenom(prenom);
 		                     clients.add(client);
-		                    
-		                     break;
-		            	}
+		                   
 		                }
 		          
 		            
@@ -64,7 +62,7 @@ public class AjouterSelectionnerClient {
 	            }
 		return clients;
 }
-	public  void sauvgarderEnBase(Client client) throws ClassNotFoundException, SQLException
+	public  void sauvgarderClientEnBase(Client client) throws ClassNotFoundException, SQLException
 	{
 		Connection conn = null;
 		

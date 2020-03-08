@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.ztest.DBconnexion.AjouterSelectionnerClient;
+import com.ztest.DBconnexion.ClientDao;
 import com.ztest.DBconnexion.DBConnection;
 
 
@@ -37,9 +37,9 @@ public class Identifier extends HttpServlet {
 		String email=(String)request.getParameter("email");
         String pass =(String)request.getParameter("pass");
        
-        AjouterSelectionnerClient client = new AjouterSelectionnerClient();
+        ClientDao client = new ClientDao();
         try {
-			request.setAttribute("clients", client.recupererDeBase(email, pass));
+			request.setAttribute("clients", client.recupererClientDeBase(email, pass));
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

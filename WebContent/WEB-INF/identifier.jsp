@@ -20,7 +20,7 @@ h1{color:#ff33f9;
     <form method="POST" action="Identifier">
         <div class="col-md-4 mb-3">
       <label for="validationTooltip01">E-mail</label>
-      <input type="text" class="form-control" id="validationTooltip01" placeholder="E-mail" name="email" id="email" required>
+      <input type="email" class="form-control" id="validationTooltip01" placeholder="E-mail" name="email" id="email" required>
       <div class="valid-tooltip">
         Looks good!
       </div>
@@ -28,7 +28,7 @@ h1{color:#ff33f9;
     
      <div class="col-md-4 mb-3">
       <label for="validationTooltip01">mot de passe:</label>
-      <input type="text" class="form-control" id="validationTooltip01" placeholder="mot de passe" name="pass" id="pass" required>
+      <input type="password" class="form-control" id="validationTooltip01" placeholder="mot de passe" name="pass" id="pass" required>
       <div class="valid-tooltip">
         Looks good!
       </div>
