@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-	// TODO (later) use connections pool
 	
 	
 	private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
